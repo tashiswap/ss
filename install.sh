@@ -21,7 +21,7 @@ echo "تنظیم شادوساکس"
 sudo touch /var/snap/shadowsocks-libev/common/etc/shadowsocks-libev/config.json
 
 file="/var/snap/shadowsocks-libev/common/etc/shadowsocks-libev/config.json"
-port=$(( 443 ))
+port=$(( 80 ))
 
 choose() { echo ${1:RANDOM%${#1}:1} $RANDOM; }
 randompassword="$({ choose '!@#$%^\&'
