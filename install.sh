@@ -40,6 +40,8 @@ echo "    \"server_port\":$port," >> $file
 echo "    \"password\":\"$randompassword\"," >> $file
 echo "    \"timeout\":600," >> $file
 echo "    \"method\":\"chacha20-ietf-poly1305\"," >> $file
+echo "    \"plugin\":\"v2ray-plugin\"," >>file
+echo "    \"plugin_opts\":\"server;tls;host=tash.abtin.fun;cert=/etc/letsencrypt/live/tash.abtin.fun/fullchain.pem;key=/etc/letsencrypt/live/tash.abtin.fun/privkey.pem;loglevel=debug\"," >>file
 echo "    \"nameserver\":\"1.1.1.1\"" >> $file
 echo "}" >> $file
 
